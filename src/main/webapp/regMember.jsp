@@ -51,8 +51,8 @@ table{
 						<option value="011">011</option>
 						<option value="012">012</option>
 					</select>
-						<input type="text" name="tell" style="width: 50px">
-						<input type="text" name="tell" style="width: 50px">
+						<input type="text" name="tell" style="width: 51px">
+						<input type="text" name="tell" style="width: 51px">
 				</td>
 			</tr>
 			<tr>
@@ -67,7 +67,7 @@ table{
 					<input type="date" name="date">
 				</td>
 			</tr>
-			<tr>
+			<tr style="text-align: center; height: 40px">
 				<td colspan="2">
 					<input type="submit" value="회원가입">
 				</td>

@@ -25,43 +25,54 @@
 		<input value="${email }" name="email" type="hidden">
 		<input value="${date }" name="date" type="hidden">
 		
-	
-		<table>
+		<table style="background-color: #f2f2f2; 
+						margin: 0 auto; width: 500px; 	
+						padding-left: 50px;
+						padding-right: 50px;
+						border-radius: 5px;
+						padding-top: 50px;
+						padding-bottom: 50px;">
 			<tr>
-				<td>관심 레슨</td>
 				<td>
-					<input type="checkbox" value="수영" name="lesson">수영 
-					<input type="checkbox" value="헬스" name="lesson">헬스 
-					<input type="checkbox" value="요가" name="lesson">요가 
-					<input type="checkbox" value="필라테스" name="lesson">필라테스 
-				</td>
-			</tr>
-		</table>
-		<table>
-			<tr>
-				<td>레슨에 참여한 적 있나요</td>
-				<td>
-					<input type="radio" value="예" name="answer" checked>예 
-					<input type="radio" value="아니오" name="answer">아니오
-				</td>
-			</tr>
-		</table>
-		<table>
-			<tr	>
-				<td>추천인 명</td>
-				<td>
-					<input type="text" name="refferal">
-				</td>
-			</tr>
-			<tr>
-				<td>자기소개</td>
-				<td>
-					<textarea rows="5" cols="40" name="introduce" style="resize: none"></textarea>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2">
-					<input type="submit" value="입력완료">
+					<table>
+						<tr>
+							<td>관심 레슨</td>
+							<td>
+								<input type="checkbox" value="수영" name="lesson">수영 
+								<input type="checkbox" value="헬스" name="lesson">헬스 
+								<input type="checkbox" value="요가" name="lesson">요가 
+								<input type="checkbox" value="필라테스" name="lesson">필라테스 
+							</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<td>레슨에 참여한 적 있나요</td>
+							<td>
+								<input type="radio" value="예" name="answer" checked>예 
+								<input type="radio" value="아니오" name="answer">아니오
+							</td>
+						</tr>
+					</table>
+					<table>
+						<tr	>
+							<td>추천인 명</td>
+							<td>
+								<input type="text" name="refferal">
+							</td>
+						</tr>
+						<tr>
+							<td>자기소개</td>
+							<td>
+								<textarea rows="5" cols="40" name="introduce" style="resize: none"></textarea>
+							</td>
+						</tr>
+						<tr style="text-align: center">
+							<td colspan="2">
+								<input type="submit" value="입력완료">
+							</td>
+						</tr>
+					</table>
 				</td>
 			</tr>
 		</table>
