@@ -30,8 +30,8 @@
 <c:forEach begin="1" end="10" step="2">
 	java	
 </c:forEach>
-<!-- items에는 데이터배열이 들어간다.
-var에는 하나씩 담을 변수를 지정 -->
+<!-- items : 반복을 돌릴 객체.
+	 var : 하나씩 뺏을 때 이름 -->
 <c:forEach items="${tell }" var="e">
 	${e }
 </c:forEach>

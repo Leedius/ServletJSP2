@@ -23,6 +23,13 @@ tr{
 </head>
 <body>
 	<div>
+		<form action="RegServlet" method="post">
+			<input value="${id }" name="id" type="hidden">
+			<input value="${password }" name="password" type="hidden">
+			<input value="${name }" name="name" type="hidden">
+			<input value="${tell }" name="name" type="hidden">
+			<input value="${email }" name="email" type="hidden">
+			<input value="${date }" name="date" type="hidden">
 		<table style="background-color: #f2f2f2;
 		margin: 0 auto;
 		margin-top: 100px;
@@ -45,9 +52,7 @@ tr{
 						<tr>
 							<td>연락처</td>
 							<td>
-								<c:forEach items="${tell }" var="e">
-									${e }
-								</c:forEach>
+								${tell }
 								<br>
 							</td>
 							<td>이메일</td>
@@ -74,10 +79,10 @@ tr{
 						</tr>
 					</table>
 				
-					<table style="height: 50px; margin:0 auto; border:0">
+					<table style="margin:0 auto; border:0;">
 						<tr>
 							<td colspan="4" style="border: 0; ">
-								<input type="button" value="뒤로가기" onclick="location.href='regMemberDetail.jsp'"> 
+								<input type="submit" value="뒤로가기"> 
 								<input type="button" value="회원등록" onclick="location.href='regMember.jsp'"> 
 							</td>
 						</tr>
@@ -85,6 +90,7 @@ tr{
 				</td>
 			</tr>
 		</table>
+		</form>
 	</div>
 </body>
 </html>

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,9 +20,9 @@
 		<input value="${id }" name="id" type="hidden">
 		<input value="${password }" name="password" type="hidden">
 		<input value="${name }" name="name" type="hidden">
-		<input value="${tell[0] }" name="tell" type="hidden">
-		<input value="${tell[1] }" name="tell" type="hidden">
-		<input value="${tell[2] }" name="tell" type="hidden">
+		<c:forEach items="${tell }" var="e">
+		<input value="${e }" name="tell" type="hidden">
+		</c:forEach>
 		<input value="${email }" name="email" type="hidden">
 		<input value="${date }" name="date" type="hidden">
 		
